@@ -1,45 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Rakkas&display=swap');
-
-/* Variáveis */
-:root {
-    --primary-color: #026773;
-    --secondary-color: #3CA6A6;
-    --text-color: #024959;
-    --background-color: #2485a3;
-    --button-hover: #012E40;
-    --font-body: "Chocolate Classical Sans", serif;
-    --font-titulo: "Rakkas", serif;
-}
-
-/* código omitido */
-/* código omitido */
-
-/* Reset */
-* {
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-body);
+    color: #333;
 }
 
-/* Corpo da página */
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
+h1, h2 {
+    color: #00796b;
+}
+
+a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-h3 {
-    margin-top: 25px;
+header h1 {
+    font-size: 36px;
+    margin: 0;
 }
 
-p {
-    margin-top: 20px;
+header p {
+    font-size: 18px;
+    margin: 5px 0 0 0;
 }
 
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Seções */
+.impacto {
+    margin-bottom: 30px;
+}
+
+.informacoes {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Imagens */
 img {
-    max-width: 90%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* código omitido */
+/* Rodapé */
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries (Responsividade) */
+@media (max-width: 768px) {
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+}
